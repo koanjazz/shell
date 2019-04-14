@@ -1,0 +1,180 @@
+Exercicios Pycharm
+
+n = int(input('digite um numero: '))
+a = n - 1
+s = n + 1
+print('analisando valor {}, seu antecessor é {} e o sucessor é {}' .format(n, a, s))
+
+
+n = int(input('digite um numero: '))
+print('analisando valor {}, seu antecessor é {} e o sucessor é {}' .format(n,(n-1), (n+1)))
+
+
+n = int(input('Digite um numero: '))
+d = n * 2
+t = n * 3
+r = n **(1/2)
+print('O dobro de {} vale {}.'.format(n, d))
+print('O Triplo de {} vale {}. \nA raiz quadrada de {} é igual a {:.2f}.'.format(n, t, n, r))
+
+
+n = int(input('Digite um numero: '))
+print('O dobro de {} vale {}.'.format(n, (n*2)))
+print('O Triplo de {} vale {}. \nA raiz quadrada de {} é igual a {:.2f}.'.format(n, (n*3), n, (n**(1/2))))
+
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do aluno: '))
+média = (n1 + n2) / 2
+print('A media entre {} e {} é igual a {}' .format(n1, n2, média))
+
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do aluno: '))
+média = (n1 + n2) / 2
+print('A media entre {:.1f} e {:.1f} é igual a {:.1f}' .format(n1, n2, média))
+
+medida = float(input('Distancia em metros: '))
+cm = medida * 100
+mm = medida * 1000
+print('A medida de {}m corresponde a {}cm e {}mm'.format(medida, cm, mm))
+
+
+medida = float(input('Distancia em metros: '))
+km = medida * 1
+hm = medida * 0,1
+dam = medida * 1
+dm = medida * 10
+cm = medida * 100
+mm = medida * 1000
+print('A media de {} m corresponde a {} km {} hm {} dam  {} dm  {} cm  {} mm '.format(medida, km, hm, dam, dm, cm, mm,))
+
+
+
+
+
+numero = int(input('Digite o numero para ver a tabuada: '))
+print('{} x {} = {}'.format(numero, 1, numero*1))
+print('{} x {} = {}'.format(numero, 2, numero*2))
+print('{} x {} = {}'.format(numero, 3, numero*3))
+print('{} x {} = {}'.format(numero, 4, numero*4))
+print('{} x {} = {}'.format(numero, 5, numero*5))
+print('{} x {} = {}'.format(numero, 6, numero*6))
+print('{} x {} = {}'.format(numero, 7, numero*7))
+print('{} x {} = {}'.format(numero, 8, numero*8))
+print('{} x {} = {}'.format(numero, 9, numero*9))
+print('{} x {} = {}'.format(numero, 10, numero*10))
+
+
+umero = int(input('Digite o numero para ver a tabuada: '))
+print('{} x {:2} = {}'.format(numero, 1, numero*1))
+print('{} x {:2} = {}'.format(numero, 2, numero*2))
+print('{} x {:2} = {}'.format(numero, 3, numero*3))
+print('{} x {:2} = {}'.format(numero, 4, numero*4))
+print('{} x {:2} = {}'.format(numero, 5, numero*5))
+print('{} x {:2} = {}'.format(numero, 6, numero*6))
+print('{} x {:2} = {}'.format(numero, 7, numero*7))
+print('{} x {:2} = {}'.format(numero, 8, numero*8))
+print('{} x {:2} = {}'.format(numero, 9, numero*9))
+print('{} x {:2} = {}'.format(numero, 10, numero*10))
+
+
+
+real = float(input('Quanto de dinheiro você tem na carteira? R$' ))
+dolar = real / 3.76
+print('Com R${:.2f} você pode comprar US${:.2f} '.format(real, dolar))
+
+
+larg = float(input('Largura da parede: '))
+alt = float(input('Altura da parede: '))
+área = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua área é de {}m²'.format(larg,alt,área))
+
+
+larg = float(input('Largura da parede: '))
+alt = float(input('Altura da parede: '))
+área = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua área é de {}m²'.format(larg,alt,área))
+tinta = área / 2
+print('para pintar essa parede, você precisará de {}l de tinta'.format(tinta))
+
+
+preço = float(input('Qual é o  preço do produto? R$'))
+novo = preço - (preço * 5 / 100)
+print('O produto que custava  R${}, na promoção com desconto de 5% vai custar {}'.format(preço, novo))
+
+
+salário = float(input('Qual o salário do funcionario? R$' ))
+novo = salário + (salário * 15 / 100)
+print('Um funcionário que ganhava R$ {:.2f}, com 15% de aumento passou a receber R$ {:.2f} '.format(salário, novo ))
+
+
+c = float(input('Informe a temperatura em °C: '))
+f = ((9 * c) /5 )+ 32
+print('A temperatura de {0} °C corresponde a {1} °F'.format(c, f))
+
+
+
+
+
+
+
+
+EXERCICIOS IMPORTANDO MODULOS MATH (Matematico)
+
+import math
+num = int (input('Digite um numero: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual a {}'.format(num, math.ceil (raiz)))
+
+
+math ceil = arredonda para cima
+
+
+import math
+num = int (input('Digite um numero: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual a {}'.format(num, math.floor (raiz)))
+
+
+math.floor = arredonda para baixo 
+
+
+from math import sqrt, floor
+num = int (input('Digite um numero: '))
+raiz = sqrt(num)
+print('A raiz de {} é igual a {:.2f}'.format(num, floor (raiz)))
+
+from math import sqrt, floor = forma de importação especifica
+
+
+import math
+ângulo = float(input('Digite um angulo que você deseja'))
+seno = math.sin(math.radians(ângulo))
+print('o ângulo de {} tem o seno de {:.2f}'.format(ângulo, seno))
+cosseno = math.cos(math.radians(ângulo))
+print('o ângulo de {} tem o cosseno de {:.2f}'.format(ângulo, cosseno))
+tangente = math.tan(math.radians(ângulo))
+print('o ângulo de {} tem a tangente de {:.2f}'.format(ângulo, tangente)) 
+
+
+
+import random
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+escolhido = random.choice(lista)
+print('O aluno escolhido foi {}'.format(escolhido))
+
+
+
+from random import choice
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto aluno: '))
+lista = [n1, n2, n3, n4]
+escolhido =choice(lista)
+print('O aluno escolhido foi {}'.format(escolhido))
+
+
